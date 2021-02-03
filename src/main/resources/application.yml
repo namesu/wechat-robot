@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: wechat-robot
+  datasource:
+    url: jdbc:mysql://localhost:3306/jpa?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&rewriteBatchedStatements=true&useSSL=true&serverTimezone=Asia/Shanghai
+    hikari:
+      username: root
+      password: 123123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  wechat:
+    token: CWuCiV2FwCIFjzzCdWgMxxyYh
+    corpid: ww2df1622ddabe0f9a
+    aeskey: xYnDtIYFEJKshK8rRBsoWSVmFmwaulkBpGHCHaOHNM2
+    #应用凭证,创建应用的地方可以看到
+    corpsecret: xWbuxn7JSPbD7ptKEMtsMVmSHRhaRiH2y_TN37Qm1Io
+    #推消息的时候使用
+    webhook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=42175c16-a3ea-4927-bedb-33b4586d2606
+
+
+
